@@ -14,10 +14,21 @@ class Carousel {
   }
 
   addDataAttribute() {
+    // select images
     const images = this.carouselElement.querySelectorAll('.img');
+    // loop through images and give them a data attribute of id
     images.forEach((image,index)  =>  {
       image.setAttribute('data-id', index)
     });
+  }
+
+  changePicture(direction) {
+    // call our addDataAttribute()
+    this.addDataAttribute();
+    // select the active image
+    const activeImage = this.carouselElement.querySelector('.active');
+    
+    
   }
   
 }
