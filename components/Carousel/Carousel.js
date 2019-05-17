@@ -27,7 +27,7 @@ class Carousel {
     this.addDataAttribute();
     // select the active image
     const activeImage = this.carouselElement.querySelector('.active');
-    
+    this.imageId = parseInt(activeImage.dataset.id);
     
   }
   
