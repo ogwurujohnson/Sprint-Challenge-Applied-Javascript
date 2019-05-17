@@ -44,13 +44,13 @@ class Carousel {
       // check to see if the clicked button is a next
       if(direction === 'next') {
         // if their is a next, teplace the active class of the current image with left(meaning it shoud slide to the left)
-        activeImage.classList.replace('active', 'left');
+        activeImage.classList.replace('active', 'left-side');
       } else {
         // if their is a prev, teplace the active class of the current image with right(meaning it shoud slide to the right)
-        activeImage.classList.replace('active', 'right');
+        activeImage.classList.replace('active', 'right-side');
       }
       // since their is a next image, remove both the .left and .right class from the next image and 
-      nextImage.classList.remove('left', 'right');
+      nextImage.classList.remove('left-side', 'right-side');
       // and add active to it
       nextImage.classList.add('active');
 
