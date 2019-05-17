@@ -35,7 +35,10 @@ class Carousel {
     } else {
       directionIndex = -1;
     }
+    // counter is a sum of imageid and direction index,used to determine which image to show next 
     this.counter = this.imageId + directionIndex;
+
+    const nextImage = this.carouselElement.querySelector(`img[data-id="${this.counter}"]`);
   }
   
 }
