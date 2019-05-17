@@ -39,6 +39,22 @@ class Carousel {
     this.counter = this.imageId + directionIndex;
 
     const nextImage = this.carouselElement.querySelector(`img[data-id="${this.counter}"]`);
+    // check to see if their is a nextimage
+    if(nextImage) {
+      // check to see if the clicked button is a next
+      if(direction === 'next') {
+        // if their is a next, teplace the active class of the current image with left(meaning it shoud slide to the left)
+        activeImage.classList.replace('active', 'left');
+      } else {
+        // if their is a prev, teplace the active class of the current image with right(meaning it shoud slide to the right)
+        activeImage.classList.replace('active', 'right');
+      }
+      // since their is a next image, remove both the .left and .right class from the next image and 
+      nextImage.classList.remove('left', 'right');
+      // and add active to it
+      nextImage.classList.add('active');
+
+    }
   }
   
 }
