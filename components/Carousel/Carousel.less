@@ -23,6 +23,9 @@
       background-color: @lambda-times-color-white;
       border: 2px solid @lambda-times-color-primary;
     }
+    i {
+      font-size: 45px;
+    }
   }
   .left-button {
     top: 50%; 
@@ -38,4 +41,17 @@
     .width-100();
     display: none;
   }
+  .active {
+    display: block;
+  }
+  // all images left of the active image
+  .left-side {
+    display: none;
+  }
+
+  // all images right of the active image
+  .right-side {
+    display: none;
+  }
+  
 }

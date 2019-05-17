@@ -4,11 +4,12 @@
 <head>
   <title>Lambda Times</title>
   <link rel="icon" href="./favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="./components/Tabs/Tabs.js" async></script>
-  <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
+  <script src="./components/Carousel/Carousel.js" async></script>
 </head>
 
 <body>
@@ -50,14 +51,14 @@
 
   <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
   <!-- CAROUSEL COMPONENT -->
-  <!-- <div class="carousel">
-    <div class="left-button"><</div>
-    <img src="./assets/carousel/mountains.jpeg" />
-    <img src="./assets/carousel/computer.jpeg" />
-    <img src="./assets/carousel/trees.jpeg" />
-    <img src="./assets/carousel/turntable.jpeg" />
-    <div class="right-button">></div>
-  </div> -->
+  <div class="carousel">
+    <div class="left-button"><i class="material-icons md-48">navigate_before</i></div>
+    <img src="./assets/carousel/mountains.jpeg" class="img active"/>
+    <img src="./assets/carousel/computer.jpeg" class="img right-side"/>
+    <img src="./assets/carousel/trees.jpeg" class="img right-side"/>
+    <img src="./assets/carousel/turntable.jpeg" class="img right-side"/>
+    <div class="right-button"><i class="material-icons md-48">navigate_next</i></div>
+  </div>
 
   <!-- CARDS COMPONENT -->
   <div class="cards-container">
@@ -80,6 +81,36 @@
           <img src="./assets/bones.jpg" />
         </div>
         <span>By BONES R. LIFE</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="javascript">
+      <div class="headline">Image Upload with Cloudinary and JavaScript</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/johnson.jpg" />
+        </div>
+        <span>By JOHNSON OGWURU</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="node">
+      <div class="headline">Simple API with nodejs and Es6</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/johnson.jpg" />
+        </div>
+        <span>By JOHNSON OGWURU</span>
+      </div>
+    </div>
+
+    <div class="card" data-tab="jquery">
+      <div class="headline">The Fear of JQUERY is the beginning of wisdom</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/fido.jpg" />
+        </div>
+        <span>By MELVINE AWA</span>
       </div>
     </div>
 
