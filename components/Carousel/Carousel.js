@@ -35,6 +35,7 @@ class Carousel {
     } else {
       directionIndex = -1;
     }
+    this.counter = this.imageId + directionIndex;
   }
   
 }
