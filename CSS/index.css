@@ -305,3 +305,9 @@ body {
 .carousel .active {
   display: block;
 }
+.carousel .left-side {
+  display: none;
+}
+.carousel .right-image {
+  display: none;
+}
