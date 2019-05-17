@@ -12,6 +12,14 @@ class Carousel {
       this.changePicture("next")
     );
   }
+
+  addDataAttribute() {
+    const images = this.carouselElement.querySelectorAll('.img');
+    images.forEach((image,index)  =>  {
+      image.setAttribute('data-id', index)
+    });
+  }
+  
 }
 
 let carousel = document.querySelector();
