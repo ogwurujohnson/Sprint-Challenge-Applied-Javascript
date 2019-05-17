@@ -29,6 +29,12 @@ class Carousel {
     const activeImage = this.carouselElement.querySelector('.active');
     this.imageId = parseInt(activeImage.dataset.id);
     
+    let directionIndex;
+    if (direction === 'next') {
+      directionIndex = 1;
+    } else {
+      directionIndex = -1;
+    }
   }
   
 }
